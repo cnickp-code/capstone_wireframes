@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89daf33451.js" crossorigin="anonymous"></script>
-    <title>Downstream Events</title>
+    <title>DownStream Events</title>
 </head>
 <body>
     <header>
@@ -29,43 +29,36 @@
     <nav class="mobile-nav" role="navigation">
         <div id="menuToggle">
 
-            <input type="checkbox" />
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <ul id="menu">
-                <a href="/capstone_wireframes/about.html">
-                    <li>About</li>
-                </a>
-                <a href="/capstone_wireframes/events.html">
-                    <li>Events</li>
-                </a>
-                <a href="/capstone_wireframes/myevents.html">
-                    <li>My Schedule</li>
-                </a>
-                <a href="/capstone_wireframes/addevent.html">
-                    <li>Add Event</li>
-                </a>
-                <a href="/capstone_wireframes/login.html">
-                    <li>Login</li>
-                </a>
-                <a href="/capstone_wireframes/signup.html">
-                    <li>Sign Up</li>
-                </a>
-            </ul>
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="/capstone_wireframes/about.html"><li>About</li></a>
+            <a href="/capstone_wireframes/events.html"><li>Events</li></a>
+            <a href="/capstone_wireframes/myevents.html"><li>My Schedule</li></a>
+            <a href="/capstone_wireframes/addevent.html"><li>Add Event</li></a>
+            <a href="/capstone_wireframes/login.html"><li>Login</li></a>
+            <a href="/capstone_wireframes/signup.html"><li>Sign Up</li></a>
+          </ul>
         </div>
     </nav>
+
     <main>
+
         <div class="fab-container">
             <a href="/capstone_wireframes/mobile_search.html" class="fab-search">
                 <i class="fas fa-search"></i>
             </a>
         </div>
 
-        <div class="main-container">
-            <div class="sidebar">
+        
+        <div class="cover">
+            <div class="cover-container">
+                <a href="/capstone_wireframes/events.html" class="cover-exit"></a>
+                <h1 class="cover-event-title">Search Menu</h1>
                 <div class="calendar">
                     <div class="calendar-text">CALENDAR</div>
                 </div>
@@ -120,12 +113,13 @@
                         <option value="twitch">Twitch</option>
                         <option value="youtube">YouTube</option>
                         <option value="facebook">Facebook</option>
+                        <option value="other">Other</option>
                     </select>
                     <button type="submit" class="search-button">Submit</button>
                 </form>
-
             </div>
-            <div class="myevents-content-container">
+        </div>
+            <div class="content-container">
                 <h1 class="events-header">Events for *DATE*</h1>
                 <div class="bottom-container">
                     <div class="event-container">
@@ -133,7 +127,6 @@
                         <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
                         <div class="event-button-container">
                             <a href="/capstone_wireframes/eventinfo.html" class="details-button event-info">View Details</a>
-                            <a href="/" class="details-button event-info">Delete</a>
                         </div>
                     </div>
                     <div class="event-container">
@@ -141,7 +134,6 @@
                         <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
                         <div class="event-button-container">
                             <a href="/capstone_wireframes/eventinfo.html" class="details-button event-info">View Details</a>
-                            <a href="/" class="details-button event-info">Delete</a>
                         </div>
                     </div>
                     <div class="event-container">
@@ -149,7 +141,6 @@
                         <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
                         <div class="event-button-container">
                             <a href="/capstone_wireframes/eventinfo.html" class="details-button event-info">View Details</a>
-                            <a href="/" class="details-button event-info">Delete</a>
                         </div>
                     </div>
                     <div class="event-container">
@@ -157,12 +148,12 @@
                         <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
                         <div class="event-button-container">
                             <a href="/capstone_wireframes/eventinfo.html" class="details-button event-info">View Details</a>
-                            <a href="/" class="details-button event-info">Delete</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    
 </body>
 </html>
