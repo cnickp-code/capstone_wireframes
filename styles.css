@@ -436,7 +436,8 @@ footer {
 
 .event-container {
     width: 70%;
-    height: 400px;
+    height: 430px;
+    padding-top: 10px;
     position: relative;
     margin: 40px auto 40px auto;
     border-top: 1px solid black;
