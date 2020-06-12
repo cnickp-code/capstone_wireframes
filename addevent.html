@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89daf33451.js" crossorigin="anonymous"></script>
+    <title>DownStream Add Event</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-link">
+            <a href="/home.html" class="header-text">DownStream</a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="/about.html" class="nav-link">About</a></li>
+            <li><a href="/events.html" class="nav-link">Events</a></li>
+            <li><a href="/myevents.html" class="nav-link">My Schedule</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li><a href="/addevent.html" class="nav-link">Add Event</a></li>
+            <!-- <li><a href="/" class="nav-link">Log Out</a></li> -->
+            <li><a href="/login.html" class="nav-link">Login</a></li>
+            <li><a href="/signup.html" class="nav-link">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="cover">
+            <div class="add-cover-container">
+                <div class="form-box center">
+                    <form class="main-form">
+                        <a href="/home.html" class="cover-exit"></a>
+                        <h1>Add Event</h1>
+                        <fieldset name="login-info">
+                            <div class="add-event-container">
+                                <div class="add-event-left">
+                                    <h4>Event Title</h4>
+                                    <input placeholder="" type="text" name="title" id="email" class="text-input center"
+                                        required />
+                                    <h4>Image URL</h4>
+                                    <input type="text" name="image-url" id="image-url" placeholder=""
+                                        class="text-input center" required />
+                                    <h4>Stream URL</h4>
+                                    <input type="text" name="stream-url" id="stream-url" placeholder=""
+                                        class="text-input center" required />
+                                </div>
+                                <div class="add-event-right">
+                                    <h5>Genre(s)</h5>
+                                    <div class="genre-container center">
+                                        <div class="genre-container-left">
+                                            <label class="genre">House
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="genre">Dubstep
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="genre">Trance
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="genre">Other
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="genre-container-right">
+                                            <label class="genre">Trap
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="genre">DnB
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="genre">Techno
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5>Platform</h5>
+                                    <select name="platform" id="platform" class="event-select center">
+                                        <option value="twitch" selected>Twitch</option>
+                                        <option value="youtube">YouTube</option>
+                                        <option value="facebook">Facebook</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h4>Event Info</h4>
+                            <textarea class="add-event-info center">
+
+                    </textarea>
+                            <div class="date-container">
+                                <h4>Starting Date:</h4>
+                                <div class="date-inner-container">
+                                    <div class="date-left">
+                                        <select name="month" id="month" class="event-select">
+                                            <option value="none" selected disabled>Choose Month</option>
+                                            <option value="youtube">YouTube</option>
+                                            <option value="facebook">Facebook</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="date-right">
+                                        <select name="day" id="day" class="event-select">
+                                            <option value="none" selected disabled>Choose Day</option>
+                                            <option value="youtube">YouTube</option>
+                                            <option value="facebook">Facebook</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h4>End Date:</h4>
+                                <div class="date-inner-container">
+                                    <div class="date-left">
+                                        <select name="month" id="month" class="event-select">
+                                            <option value="none" selected disabled>Choose Month</option>
+                                            <option value="youtube">YouTube</option>
+                                            <option value="facebook">Facebook</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="date-right">
+                                        <select name="day" id="day" class="event-select">
+                                            <option value="none" selected disabled>Choose Day</option>
+                                            <option value="youtube">YouTube</option>
+                                            <option value="facebook">Facebook</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+                        <button type="submit">Add Event</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

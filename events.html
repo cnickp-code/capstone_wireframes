@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89daf33451.js" crossorigin="anonymous"></script>
+    <title>DownStream Events</title>
+</head>
+<body>
+    <header>
+        <div class="header-link">
+            <a href="/home.html" class="header-text">DownStream</a>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="/about.html" class="nav-link">About</a></li>
+            <li><a href="/events.html" class="nav-link">Events</a></li>
+            <li><a href="/myevents.html" class="nav-link">My Schedule</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li><a href="/addevent.html" class="nav-link">Add Event</a></li>
+            <!-- <li><a href="/" class="nav-link">Log Out</a></li> -->
+            <li><a href="/login.html" class="nav-link">Login</a></li>
+            <li><a href="/signup.html" class="nav-link">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile-nav" role="navigation">
+        <div id="menuToggle">
+
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="/home.html"><li>Home</li></a>
+            <a href="/about.html"><li>About</li></a>
+            <a href="/events.html"><li>Events</li></a>
+            <a href="/myevents.html"><li>My Schedule</li></a>
+            <a href="/addevent.html"><li>Add Event</li></a>
+            <a href="/login.html"><li>Login</li></a>
+            <a href="/signup.html"><li>Sign Up</li></a>
+          </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="fab-container">
+            <button class="fab-search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="main-container">
+            <div class="sidebar">
+                <div class="calendar">
+                    <div class="calendar-text">CALENDAR</div>
+                </div>
+
+                <form id="event-search-form">
+                    <label for="search-input" class="event-input-label">Search Events:</label>
+                    <input type="text" placeholder="Search" class="event-search-input" id="search-input" />
+                    <br>
+                    <label for="genre">Filter by genre:</label>
+                    <div class="genre-container">
+                        <div class="genre-container-left">
+                            <label class="genre">House
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="genre">Dubstep
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="genre">Trance
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="genre">Techno
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="genre-container-right">
+                            <label class="genre">Trap
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="genre">DnB
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="genre">Other
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="genre">All Genres
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="platform">Filter by platform:</label>
+                    <select name="platform" id="platform" class="event-select">
+                        <option value="none" selected>All Platforms</option>
+                        <option value="twitch">Twitch</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="facebook">Facebook</option>
+                    </select>
+                    <button type="submit" class="search-button">Submit</button>
+                </form>
+
+            </div>
+            <div class="content-container">
+                <h1 class="events-header">Events for *DATE*</h1>
+                <div class="bottom-container">
+                    <div class="event-container">
+                        <h3 class="center-text">Event Title</h3>
+                        <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
+                        <div class="event-button-container">
+                            <a href="/eventinfo.html" class="details-button event-info">View Details</a>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <h3 class="center-text">Event Title</h3>
+                        <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
+                        <div class="event-button-container">
+                            <a href="/eventinfo.html" class="details-button event-info">View Details</a>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <h3 class="center-text">Event Title</h3>
+                        <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
+                        <div class="event-button-container">
+                            <a href="/eventinfo.html" class="details-button event-info">View Details</a>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <h3 class="center-text">Event Title</h3>
+                        <img src="https://billetto.co.uk/blog/wp-content/uploads/2019/06/zhqczjr9fho-e1560853535167.jpg" class="event-image"/>
+                        <div class="event-button-container">
+                            <a href="/eventinfo.html" class="details-button event-info">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
