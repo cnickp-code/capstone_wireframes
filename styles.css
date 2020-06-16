@@ -6,6 +6,7 @@
 
 html {
     /* height: 100vh; */
+    height: 100%;
     width: 100vw;
     /* font: 100%/1.25 'Roboto', helvetica, sans-serif; */
     font-family: 'Jost', sans-serif;
@@ -1243,7 +1244,7 @@ footer {
     }
     
     .bottom-container {
-        height: 450px;
+        height: 100%;
         position: relative;
         overflow-y: scroll;
         /* border-top: 1px solid black; */
@@ -1433,6 +1434,12 @@ footer {
 
     .cover-event-info {
         font-size: small;
+    }
+}
+@media screen and (min-height: 700px) {
+    .fab-container {
+        bottom: 75px;
+
     }
 }
 
