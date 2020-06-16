@@ -51,8 +51,12 @@ footer {
     /* position: absolute;
     bottom: 0; */
     border-top: 1px solid black;
-    width: 90%;
+    /* width: 90%; */
     padding-bottom: 10px;
+    -webkit-box-shadow: 0px -2px 9px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px -2px 9px 0px rgba(0,0,0,0.59);
+    box-shadow: 0px -2px 9px 0px rgba(0,0,0,0.59);
+    background-color: white;
 }
 
 /* General Stuff */
@@ -69,6 +73,8 @@ footer {
 .no-top-border {
     border-top: none;
 }
+
+
 
 /* COVER PAGE STYLES */
 
@@ -216,7 +222,7 @@ footer {
 .header-link {
     display: table;
     height: 15vh;
-    margin: 5px auto 5px auto;
+    /* margin: 5px auto 5px auto; */
     width: 100%;
     font-size: 2.7em;
     font-weight: bold;
@@ -381,6 +387,7 @@ footer {
 }
 
 .contact-footer {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -432,11 +439,12 @@ footer {
 
 .events-header {
     text-decoration: underline;
-    border-bottom: 1px solid black;
     padding: 10px;
-    -webkit-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.59);
-    -moz-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.59);
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.59);
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.59);
+    z-index: 500;
 }
 
 .content-container {
@@ -856,6 +864,10 @@ footer {
         display: none;
     }
 
+    .desktop-hide {
+        display: none;
+    }
+
 }
 
 
@@ -866,8 +878,8 @@ footer {
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        /* border-left: 1px solid black;
+        border-right: 1px solid black; */
     }
 
     main {
@@ -885,7 +897,7 @@ footer {
         vertical-align: middle;
         text-align: center;
         text-decoration: none;
-        color: rgb(92, 92, 92);
+        color: white;
     }
     
     .mobile-nav {
@@ -898,6 +910,7 @@ footer {
         padding: 10px;
         width: 100%;
         background-color: rgb(202, 202, 202);
+        background-image: url('https://floridadep.gov/sites/all/themes/basic/image_thumbs_png_gif_jpg.php?f=Fotolia_66039753_L.jpg&w=1600&h=600');
         z-index: 1000;
         -webkit-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.59);
         -moz-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.59);
@@ -911,6 +924,7 @@ footer {
     .mobile-logo {
         font-weight: bolder;
         font-size: 1.2rem;
+        color: white;
     }
 
     .splash-middle-container {
@@ -930,11 +944,12 @@ footer {
     .header-link {
         display: table;
         height: 15vh;
-        margin: 5px auto 5px auto;
+        /* margin: 5px auto 5px auto; */
         width: 100%;
         font-size: 2em; /* Changed */
         font-weight: bold;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(112, 112, 112);
+        background-image: url('https://floridadep.gov/sites/all/themes/basic/image_thumbs_png_gif_jpg.php?f=Fotolia_66039753_L.jpg&w=1600&h=600')
     }
     
     .main-nav {
@@ -982,7 +997,7 @@ footer {
       margin-bottom: 5px;
       position: relative;
       
-      background: #919191;
+      background: #ebebeb;
       border-radius: 3px;
       
       z-index: 1;
@@ -1102,8 +1117,8 @@ footer {
     .fab-container {
         display: flex;
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 60px;
+        right: 30px;
         z-index: 999;
         opacity: 0.9;
     }
