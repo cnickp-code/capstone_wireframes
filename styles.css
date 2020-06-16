@@ -6,7 +6,7 @@
 
 html {
     /* height: 100vh; */
-    height: 100%;
+    /* height: 100%; */
     width: 100vw;
     /* font: 100%/1.25 'Roboto', helvetica, sans-serif; */
     font-family: 'Jost', sans-serif;
@@ -471,6 +471,9 @@ footer {
     height: 100%;
     max-width: 710px;
     max-height: 400px;
+    -webkit-box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
+    -moz-box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
+    box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
 }
 
 .event-info {
@@ -805,10 +808,12 @@ footer {
 }
 
 .details-button {
-    text-align: center;
-    background-color: rgb(44, 180, 233);
+    background-color: rgb(201, 201, 201);
     color: black;
     text-decoration: none;
+    /* -webkit-box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
+    -moz-box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
+    box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59); */
 }
 
 @media screen and (min-width: 1400px) {
@@ -889,6 +894,10 @@ footer {
         height: 65%; 
         /* max-height: 340px; */
         min-height: fit-content;
+    }
+
+    .main-container {
+        height: 76.6vh;
     }
 
     .header-text {
@@ -1093,6 +1102,9 @@ footer {
     .spotlight-image { 
         width: 75%;
         height: 60%;
+        -webkit-box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
+    -moz-box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
+    box-shadow: 6px 5px 11px -1px rgba(0,0,0,0.59);
     }
     
     .spotlight-info {
@@ -1422,6 +1434,16 @@ footer {
         font-size: 1.7rem;
     }
 
+}
+
+@media screen and (min-height: 600px) {
+    .form-box-ls {
+        margin-bottom: 180px;
+    }
+
+    .login-box {
+        margin-top: 30px;
+    }
 }
 
 
